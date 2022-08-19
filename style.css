@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans&family=Outfit&display=swap');
+/*if i have imported images in html then when i resize it. and the circle
+width is larger than the screan width  the responsive ness will not be achieved   */
+
+* {
+    font-family: Outfit;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+:root {
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 44%, 49%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+
+}
+
+body {
+    background-color: rgb(244 244 244);
+    mix-blend-mode: multiply;
+    font-size: 15px
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0 150px 0 150px; */
+    /* padding: 0 150px 0 150px; */
+}
+
+.heading {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 29px;
+
+}
+
+.intro {
+    width: 40%;
+}
+
+.title {
+
+    color: var(--Very-Dark-Magenta);
+    font-size: 3.6em;
+    line-height: 1em;
+    font-weight: 700;
+
+}
+
+.sub-title {
+    color: var(--Dark-Grayish-Magenta);
+    font-size: 1.5em;
+    display: block;
+    line-height: 1.5em;
+    margin-top: 25px;
+}
+
+.heading ul li {
+    list-style: none;
+    background: var(--Light-Grayish-Magenta);
+    margin-top: 20px;
+    padding: 13px 106px 13px 50px;
+    border-radius: 10px;
+}
+
+.stars {
+    color: var(--Very-Dark-Magenta);
+}
+
+.first-rate {
+    position: relative;
+    right: 40px;
+}
+
+.second-rate {
+    position: relative;
+    right: 20px;
+}
+
+
+
+.review {
+    display: flex;
+    width: 100vw;
+    justify-content:center;
+    /* margin: 70px 0 45px 0; */
+    /* padding: 70px 0 45px 0; */
+
+}
+
+.common {
+    background-color: hsl(300, 43%, 22%);
+    padding: 40px;
+    border-radius: 10px;
+    color: white;
+    width: 27%;
+}
+
+.profile-pic-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profile-pic-name img {
+    width: 3em;
+    border-radius: 50%;
+
+}
+
+.profile-pic-name span {
+    padding-left: 25px;
+}
+
+.profile-pic-name small {
+    display: block;
+    font-size: 1.05em;
+    color: var(--Soft-Pink);
+}
+.common p{
+    padding-top: 25px;
+}
+
+.colton {}
+
+.irene {
+    margin-left: 35px;
+    margin-right: 35px;
+    position: relative;
+    top: 15px;
+}
+
+.anne {
+    position: relative;
+    top: 30px;
+
+}
+
+/*GRAPHIC CIRCLES*/
+
+.circles img {
+    position: absolute;
+    z-index: -1;
+}
+
+.circles .c1 {
+
+    top: 0px;
+    left: 0px;
+
+}
+
+.circles .c2 {
+
+    bottom: 0px;
+    right: 0px;
+
+}
+
+@media only screen and (max-width:800px) {
+
+
+    .container {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heading {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .intro {
+        margin-top: 30em;
+        overflow: auto;
+        width: 100%;
+    }
+
+    .title {
+        padding: 0 35px 0 35px;
+        font-size: 2.9em;
+    }
+
+    .sub-title {
+        font-size: 1.9em;
+        padding-top: 10px;
+        text-align: center;
+        line-height: 1.2em;
+    }
+
+    .stars {
+        width: 100%;
+        font-weight: 600;
+    }
+
+    .stars img {
+        padding: 5px;
+    }
+
+    .stars span {
+        display: block;
+    }
+
+    .first-rate {
+        right: 0px;
+    }
+
+    .second-rate {
+        right: 0px;
+    }
+
+    .review {
+        display: flex;
+        flex-direction: column;
+    }
+.heading ul li{
+    margin:10px;
+    padding: 13px ;
+}
+    .irene {
+        margin: 0;
+    }
+
+    .common {
+        width: 100%;
+    }
+
+    .common img {
+        border-radius: 50%;
+        width: 50px;
+    }
+
+    .common p {
+        padding-top: 35px;
+        text-align: ;
+    }
+
+    .profile-pic-name {
+        display: flex;
+        height: 100%;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .profile-pic-name span {
+        padding-left: 25px;
+    }
+
+    .profile-pic-name small {
+        display: block;
+        font-size: inherit;
+        color: var(--Soft-Pink);
+    }
+
+    .circles .c1 {
+        top: 0px;
+        left: -275px;
+    }
+
+    .circles .c2 {
+        bottom: 0px;
+        right: 0px;
+
+    }
+}
